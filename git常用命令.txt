@@ -11,5 +11,10 @@
 切换分支					git checkout 分支名
 把指定的分支合并到当前分支上git merge 分支名
 
+查看当前所有远程仓库别名	git remote -v
+给远程仓库起别名			git remote add 别名 远程仓库地址
+推送本地分支到远程仓库		git push 远程地址别名 本地分支名
+拉取远程仓库内容到本地库	git pull 远程地址别名 远程仓库分支名
+
 
 
