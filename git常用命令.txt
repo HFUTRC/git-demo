@@ -5,11 +5,13 @@
 查看精简历史版本信息		git reflog
 查看详细历史版本信息 		git log
 将当前项目回退到某一版本	git reset --hard 版本号
+查看文件改动记录            git diff
 
 查看分支					git branch -v
 创建分支					git branch 分支名
 切换分支					git checkout 分支名
 把指定的分支合并到当前分支上git merge 分支名
+删除本地分支                git branch -d 分支名
 
 查看当前所有远程仓库别名	git remote -v
 给远程仓库起别名			git remote add 别名 远程仓库地址
