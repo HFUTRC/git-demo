@@ -18,5 +18,22 @@
 推送本地分支到远程仓库		git push 远程地址别名 本地分支名
 拉取远程仓库内容到本地库	git pull 远程地址别名 远程仓库分支名
 
+临时保存文件 				git stash
+查看备份文件				git stash list
+恢复最近一次stash的文件内容，并将该记录在git stash list中删除 
+							git stash pop
+恢复最近一次stash的文件内容，不删除记录
+							git stash apply
 
+撤销本地修改
+1.未使用git add的时候--在工作区
+放弃修改某个文件			git checkout -- filename
+放弃所有修改的文件			git checkout .
+2.已经使用git add的时候--在暂存区
+恢复某个文件到工作区		git reset HEAD filename
+恢复所有文件到工作区		git reset HEAD .
+3.已经使用git commit提交了代码--在版本区
+回退到某一版本			git reset --hard 版本号
+回退到上一版本			git reset --hard HEAD^
+如果想保存代码修改，只撤销commit和add 	git reset HEAD^ 
 
